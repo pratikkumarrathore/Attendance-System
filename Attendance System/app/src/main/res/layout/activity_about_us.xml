@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarAbout"/>
+
+
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/panelBackground"
+        android:backgroundTint="#6FFFE500"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        style="@style/TEXT"
+        android:textSize="17sp"
+        android:text="@string/introduction" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/about_us_article" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        style="@style/TEXT"
+        android:textSize="17sp"
+        android:text="Developers:" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePratik"
+                android:layout_width="90dp"
+                android:layout_height="88dp"
+
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="263dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.195"
+                app:srcCompat="@drawable/img_pratik" />
+
+            <ImageView
+                android:id="@+id/imageSudhir"
+                android:layout_width="87dp"
+                android:layout_height="88dp"
+
+                android:layout_marginStart="258dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="144dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_sudhir" />
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/TEXT"
+                android:layout_width="168dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginEnd="209dp"
+                android:layout_marginBottom="110dp"
+                android:text="Pratik Kumar Rathore"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="251dp"
+                android:layout_marginTop="135dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginBottom="113dp"
+                android:text="Sudhir Pradhan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="202dp"
+                android:layout_height="31dp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="187dp"
+                android:text="@string/contactEmail"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagePratik"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/editTextTextEmailAddress2"
+                android:layout_width="150dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="237dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="68dp"
+                android:text="@string/contactEmailS"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/editTextPhone"
+                android:layout_width="106dp"
+                android:layout_height="19dp"
+                android:text="@string/contactPhoneP"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editTextPhone2"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+                app:layout_constraintVertical_bias="0.129" />
+
+            <TextView
+                android:id="@+id/editTextPhone2"
+                android:layout_width="106dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="239dp"
+                android:layout_marginTop="202dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="43dp"
+                android:inputType="phone"
+                android:text="@string/contactPhoneS"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.061" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.Attendance.FullscreenContainer"
+    tools:context=".FullscreenActivity"
+    style="@style/SCREEN">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:layout_editor_absoluteX="1dp">
+
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="724dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:backgroundTint="#343BD1FF"
+            android:backgroundTintMode="screen"
+            android:fontFamily="@font/amaranth_bold"
+            android:foregroundGravity="center"
+            android:gravity="top|center"
+            android:keepScreenOn="true"
+            android:text="Manage Attendance"
+            android:textColor="@color/lavender"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="681dp"
+            android:layout_marginTop="69dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/appSettings"
+            android:layout_width="138dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="589dp"
+            android:layout_marginBottom="120dp"
+            android:text="App Settings"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnAppSettings"
+            app:layout_constraintStart_toStartOf="@+id/btnAppSettings"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/genSheet"
+            android:layout_width="141dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="589dp"
+            android:layout_marginBottom="122dp"
+            android:text="Downloaded Sheets"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnGenSheet"
+            app:layout_constraintStart_toStartOf="@+id/btnGenSheet"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnAppSettings"
+            android:layout_width="154dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="448dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="158dp"
+            android:background="@drawable/settings"
+            android:foreground="@drawable/edittext3"
+            android:hapticFeedbackEnabled="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.448" />
+
+        <ImageButton
+            android:id="@+id/btnEnrollStd"
+            android:layout_width="153dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="237dp"
+            android:layout_marginTop="229dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="384dp"
+            android:background="@drawable/addstd"
+            android:foreground="@drawable/edittext3"
+            android:hapticFeedbackEnabled="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnTakeAttendance"
+            android:layout_width="161dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="42dp"
+
+
+            android:layout_marginTop="229dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginBottom="379dp"
+            android:background="@drawable/prsnt"
+            android:contextClickable="true"
+            android:foreground="@drawable/edittext3"
+            android:hapticFeedbackEnabled="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnGenSheet"
+            android:layout_width="148dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="444dp"
+            android:layout_marginEnd="221dp"
+            android:layout_marginBottom="161dp"
+            android:background="@drawable/sheets"
+            android:foreground="@drawable/edittext3"
+            android:hapticFeedbackEnabled="true"
+            android:rotation="-1.5"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.489" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="141dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="362dp"
+            android:layout_marginBottom="349dp"
+            android:text="Take Attendance"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnTakeAttendance"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/btnTakeAttendance"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="138dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="362dp"
+            android:layout_marginBottom="346dp"
+            android:text="Enroll Students"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnEnrollStd"
+            app:layout_constraintStart_toStartOf="@+id/btnEnrollStd"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

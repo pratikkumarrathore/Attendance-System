@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Attendance</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">Not yet registered?<font color='#FF6200EE'> Sign Up</font></string>
+    <string name="alreadyUser">Already Registered?<font color='#FF6200EE'> Log In</font></string>
+    <string name="contact_us">Contact Us</string>
+    <string name="not_you">Not you ?</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="app_settings">App Settings</string>
+    <string name="off">OFF</string>
+    <string name="faqs">FAQs ?</string>
+    <string name="contact_us2">Contact Us</string>
+    <string name="about_us">About us...</string>
+    <string name="aboutus">AboutUs</string>
+    <string name="edt01">edt01</string>
+    <string name="edt02">edt02</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="title">Title</string>
+    <string name="note"><font color='#FF0000'> <b>Note</b></font>  \n\nSigning Out will clear all your Records i.e. Class and Student Names and Attendances too. So, Please proceed with catution!</string>
+
+
+    <string name="about_us_article">
+    <p> Welcome to our Attendance App! We are Pratik Kumar Rathore and Sudhir Pradhan, final year BCA students, and this app is our major project.
+    </p>
+    <p>
+        \n\nOur app provides a convenient solution for managing attendance records. With our user-friendly interface, you can easily create manual classes and enroll students by their names. The app also generates date-wise attendance sheets in PDF format for easy tracking and record-keeping.
+    </p>
+    <p>
+        \n\nOne of the highlights of our app is the dark mode feature, which allows you to switch to a visually pleasing dark theme that reduces eye strain and conserves battery life.
+    </p>
+    <p>
+        \n\nRest assured, we have implemented secure login functionality to protect your data and ensure privacy. Your attendance records and personal information are safe with us.
+    </p>
+    <p>
+        If you have any questions, suggestions, or feedback, please feel free to reach out to us.
+    </p>
+</string>
+
+
+    <string name="about_us_attendance_app">About Us - Attendance App</string>
+    <string name="contactEmail">Email:\n pratikkumarrathore999@gmail.com</string>
+    <string name="contactEmailS">Email:\n sudhirpradhan070@gmail.com</string>
+    <string name="contact_information">Contact Information:</string>
+    <string name="contactPhoneP">Phone:9691488974</string>
+    <string name="contactPhoneS">Phone:6267878778</string>
+    <string name="introduction">Introduction:</string>
+
+
+</resources>

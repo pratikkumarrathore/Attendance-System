@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1012255664510",
+    "project_id": "attendance-1bdf8",
+    "storage_bucket": "attendance-1bdf8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012255664510:android:d51fb29c6eb527613f6b2f",
+        "android_client_info": {
+          "package_name": "com.pratik.attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ObCqbEpqftLXuLYowjIZ9Yd7CfTxEOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

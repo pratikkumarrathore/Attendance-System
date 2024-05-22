@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/SCREEN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".AppSettingsActivity"
+    tools:ignore="ExtraText">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbarsettings"/>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorGradientCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:fontFamily="@font/aldrich"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/app_settings"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/BACKGROUND"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="556dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="170dp"
+            android:text="@string/dark_mode"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:layout_conversion_absoluteHeight="26dp"
+            tools:layout_conversion_absoluteWidth="93dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="137dp" />
+
+        <Switch
+            android:id="@+id/darkModeOff"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/off" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/BACKGROUND"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="461dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932">
+
+        <TextView
+            android:id="@+id/textnotyou"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="170dp"
+            android:text="@string/not_you"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/BUTTON_RED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:hapticFeedbackEnabled="true"
+            android:text="SIGN OUT" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        style="@style/BACKGROUND"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginBottom="380dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textfaq"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="182dp"
+            android:text="@string/faqs"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <ImageButton
+            android:id="@+id/faqImgbtn"
+            android:layout_width="105dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:background="@color/colorTransparent"
+            android:contentDescription="@string/contact_us2"
+            android:text="@string/contact_us"
+            app:srcCompat="@drawable/faq"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        style="@style/BACKGROUND"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginBottom="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textaboutus"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="25dp"
+            android:paddingEnd="150dp"
+            android:text="@string/about_us"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="159dp" />
+
+        <ImageButton
+            android:id="@+id/aboutImgBtn"
+            android:layout_width="99dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/colorTransparent"
+            android:contentDescription="@string/aboutus"
+            android:hapticFeedbackEnabled="true"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="20dp"
+            app:srcCompat="@drawable/info" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="372dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="11dp"
+        android:text="@string/note"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
